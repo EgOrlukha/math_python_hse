@@ -1,64 +1,8 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-<title>lecture01_intro slides</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<head><meta charset="utf-8" />
+<title>lecture01_intro_slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-<!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-}
-
-</script>
-
-<!--[if lt IE 9]>
-<script src="reveal.js/lib/js/html5shiv.js"></script>
-<![endif]-->
-
-<!-- Loading the mathjax macro -->
-<!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
-    <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            processEscapes: true,
-            processEnvironments: true
-        },
-        // Center justify equations in code and markdown cells. Elsewhere
-        // we use CSS to left justify single line equations in code cells.
-        displayAlign: 'center',
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}},
-            linebreaks: { automatic: true }
-        }
-    });
-    </script>
-    <!-- End of mathjax configuration -->
-
-<!-- Get Font-awesome from cdn -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
 
 <style type="text/css">
     /*!
@@ -12590,222 +12534,136 @@ ul.typeahead-list > li > a {
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
-.reveal {
-  font-size: 160%;
+body {
+  overflow: visible;
+  padding: 8px;
 }
-.reveal pre {
-  width: inherit;
-  padding: 0.4em;
-  margin: 0px;
-  font-family: monospace, sans-serif;
-  font-size: 80%;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-}
-.reveal pre code {
-  padding: 0px;
-}
-.reveal section img {
-  border: 0px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-}
-.reveal i {
-  font-style: normal;
-  font-family: FontAwesome;
-  font-size: 2em;
-}
-.reveal .slides {
-  text-align: left;
-}
-.reveal.fade {
-  opacity: 1;
-}
-.reveal .progress {
-  position: static;
-}
-.reveal .controls .navigate-left,
-.reveal .controls .navigate-left.enabled {
-  border-right-color: #727272;
-}
-.reveal .controls .navigate-left.enabled:hover,
-.reveal .controls .navigate-left.enabled.enabled:hover {
-  border-right-color: #dfdfdf;
-}
-.reveal .controls .navigate-right,
-.reveal .controls .navigate-right.enabled {
-  border-left-color: #727272;
-}
-.reveal .controls .navigate-right.enabled:hover,
-.reveal .controls .navigate-right.enabled.enabled:hover {
-  border-left-color: #dfdfdf;
-}
-.reveal .controls .navigate-up,
-.reveal .controls .navigate-up.enabled {
-  border-bottom-color: #727272;
-}
-.reveal .controls .navigate-up.enabled:hover,
-.reveal .controls .navigate-up.enabled.enabled:hover {
-  border-bottom-color: #dfdfdf;
-}
-.reveal .controls .navigate-down,
-.reveal .controls .navigate-down.enabled {
-  border-top-color: #727272;
-}
-.reveal .controls .navigate-down.enabled:hover,
-.reveal .controls .navigate-down.enabled.enabled:hover {
-  border-top-color: #dfdfdf;
-}
-.reveal .progress span {
-  background: #727272;
-}
-div.input_area {
-  padding: 0.06em;
-}
-div.code_cell {
-  background-color: transparent;
-}
-div.prompt {
-  width: 11ex;
-  padding: 0.4em;
-  margin: 0px;
-  font-family: monospace, sans-serif;
-  font-size: 80%;
-  text-align: right;
-}
-div.output_area pre {
-  font-family: monospace, sans-serif;
-  font-size: 80%;
-}
-div.output_prompt {
-  /* 5px right shift to account for margin in parent container */
-  margin: 5px 5px 0 0;
-}
-div.text_cell.rendered .rendered_html {
-  /* The H1 height seems miscalculated, we are just hidding the scrollbar */
-  overflow-y: hidden;
-}
-a.anchor-link {
-  /* There is still an anchor, we are only hidding it */
-  display: none;
-}
-.rendered_html p {
-  text-align: inherit;
-}
-::-webkit-scrollbar
-{
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar *
-{
-  background:transparent;
-}
-::-webkit-scrollbar-thumb
-{
-  background: #727272 !important;
+
+div#notebook {
+  overflow: visible;
+  border-top: none;
+}@media print {
+  div.cell {
+    display: block;
+    page-break-inside: avoid;
+  } 
+  div.output_wrapper { 
+    display: block;
+    page-break-inside: avoid; 
+  }
+  div.output { 
+    display: block;
+    page-break-inside: avoid; 
+  }
 }
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
 <link rel="stylesheet" href="custom.css">
 
-</head>
-
-
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration --></head>
 <body>
+  <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
 
-
-<div class="reveal">
-<div class="slides">
-<section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:4em;">Лекция №1</span></p>
+<p><span style="color:green; font-size:2.5em;">01. Вводные курса. Установка ПО. Введение в Python.</span></p>
 <hr>
-<p><span style="font-size:2em;">Вводные курса. Установка ПО.<br/><br/>
-Введение в Python.</span></p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:4em;">Вводные курса</span></p>
+<p><span style="color:green; font-size:2em;">Вводные курса</span></p>
 
 </div>
 </div>
-</div></section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:3em;">Страница курса</span></p>
-<p><br/>
-<span style="font-size:1.5em;">
-➡️  Открываем wiki.cs.hse.ru<br/>
-&emsp;➡️  Курсы в рамках проекта Data Culture<br/>
-&emsp;&emsp;➡️  Основы программирования на Python-1</span></p>
-<p><img src="qrcode.png" alt="QR Code to Wiki" class="center"></p>
-<p><span style="font-size:1.5em;">
-💬  Чат в телеграме $-$ для общения и вопросов.<br/>
-📢  Канал в телеграме $-$ для актуальных новостей.</span></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:3em;">Формула оценивания</span>
+<p><span style="color:green; font-size:1.5em;">Страница курса</span></p>
+<p><img src="qrcode.png" alt="QR Code to Wiki" style="float:right">
+➡️  Открываем [wiki.cs.hse.ru](http://wiki.cs.hse.ru)   
+&emsp;➡️  Курсы в рамках проекта Data Culture   
+&emsp;&emsp;➡️  Основы программирования на Python-1   
 <br/><br/>
-<span style="font-size:2em;">
-$$О_{итог} = 0.4 * O_{семинары} + 0.6 * O_{ДЗ}$$<br/></span></p>
-<p><span style="font-size:1.5em;">
-📚 В конце каждого семинара выполняются самостоятельные задания, которые можно дорешивать до следующего семинара. Итоговая оценка за семинарскую часть по 10-ти балльной шкале вычисляется следующим образом:
-$$(\text{набранные баллы } / \text{ сумма баллов}) * 10 + 1.5$$
-<br/>
-📝 Будет 3 домашних задания с равнозначным весом, на выполнения каждого дается около 3х недель
-</span></p>
-
+💬  Чат в телеграме $-$ для общения и вопросов.   
+📢  Канал в телеграме $-$ для актуальных новостей.
+</p>
 </div>
 </div>
-</div></section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:3em;">Пилотная группа</span></p>
+<p><span style="color:green; font-size:1.5em;">Формула оценивания <br/>
+$$О_{итог} = 0.4 * O_{семинары} + 0.6 * O_{ДЗ}$$</span></p>
+<p>📚 В конце каждого семинара выполняются самостоятельные задания, которые можно дорешивать до следующего семинара. Итоговая оценка за семинарскую часть по 10-ти балльной шкале вычисляется следующим образом:</p>
+<p>$$(\text{набранные баллы } / \text{ сумма баллов}) * 10 + 1.5$$</p>
+<p>📝 Будет 3 домашних задания с равнозначным весом, на выполнения каждого дается около 3х недель</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;">Пилотная группа</span></p>
 <p>Желающим студентам предоставляется возможность сдать <strong>тестовое задание</strong> на знание программы курса и перейти в пилотную группу</p>
-<p><span style="font-size:1.5em;">
-📍  Мидтерм и экзамен $-$ очные контесты по алгоритмам<br/>
-📍  Неоцениваемые задачи для самостоятельного изучения, по темам которых будут упомянутые контрольные<br/>
-📍  Отказаться от перехода можно вплоть до конца первого модуля, тогда ему засчитываются пропущенные формы контроля (семинары, ДЗ1)<br/>
-📍  Формула оценивания:</span>
-<br/><br/>
-<span style="font-size:2em;">
-$$О_{итог} = 6 + 0.2 * O_{мидтерм} + 0.2 * O_{экзамен}$$<br/><br/></span></p>
+<p>📍  Мидтерм и экзамен $-$ очные контесты по алгоритмам<br>
+📍  Неоцениваемые задачи для самостоятельного изучения, по темам которых будут упомянутые контрольные<br>
+📍  Отказаться от перехода можно вплоть до конца первого модуля, тогда ему засчитываются пропущенные формы контроля (семинары, ДЗ1)<br>
+📍  Формула оценивания:</p>
+<p><span style="font-size:1.5em;">$$О_{итог} = 6 + 0.2 * O_{мидтерм} + 0.2 * O_{экзамен}$$</span></p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:4em;">Установка ПО</span></p>
+<p><span style="color:green; font-size:2em;">Установка ПО</span></p>
 
 </div>
 </div>
-</div></section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:3em;">Jupyter Notebook</span></p>
+<p><span style="color:green; font-size:1.5em;">Jupyter Notebook</span></p>
 <p><img src="https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/07/jupyter-logo-featured-image.png?resize=600%2C315&ssl=1 " style="float:right" width="200"/></p>
 <p><strong>Jupyter Notebook</strong> <em>(джупитер ноутбук, тетрадка, ноутбук, ипунб-файл)</em> $-$ это программа для <em>интерактивных</em> вычислений.
 Тут можно писать текст, код на языке Python, выводить картинки, работать с командной строкой.</p>
@@ -12813,10 +12671,10 @@ $$О_{итог} = 6 + 0.2 * O_{мидтерм} + 0.2 * O_{экзамен}$$<br/>
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span>
@@ -12826,28 +12684,10 @@ $$О_{итог} = 6 + 0.2 * O_{мидтерм} + 0.2 * O_{экзамен}$$<br/>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello World!
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="nb">echo</span> Hello World!
@@ -12857,92 +12697,105 @@ $$О_{итог} = 6 + 0.2 * O_{мидтерм} + 0.2 * O_{экзамен}$$<br/>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello World!
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Инструкция по установке Jupyter<br>
-1й вариант: если windows 10 или linux, то через ubuntu, pip install<br>
-2й вариант: скачать миниконду <a href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> и дальше conda install<br>
-3й вариант: работать в colaboratory</p>
+<p><span style="color:green; font-size:1.5em;">Инструкция по установке и запуску Jupyter Notebook</span></p>
+<p><strong>(1)</strong>  Если на вашем компьютере стоит:</p>
+<ul>
+<li>Windows 10: <ul>
+<li>в Microsoft Store скачиваем и открываем <a href="https://www.microsoft.com/store/productId/9NBLGGH4MSV6">Ubuntu-терминал</a></li>
+</ul>
+</li>
+<li>Linux/Mac:<ul>
+<li>открываем терминал (Ctrl + Alt + T / Search)</li>
+</ul>
+</li>
+<li>Windows ниже 10й версии:<ul>
+<li>скачиваем и устанавливаем облегченную версию Анаконды - <a href="https://docs.conda.io/en/latest/miniconda.html">Миниконду</a></li>
+<li>находим и открываем Anaconda Prompt терминал</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
-</div></section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Инструкция по работе с Jupyter</p>
-<p>как создавать файлы, как создавать ячейки</p>
-<p>Или просто прикрепить ссылку на туториал!</p>
+<p><strong>(2)</strong>  Вводим в терминале <code>pip install notebook</code> (или <code>conda install notebook</code>) и ждем окончания загрузки<br>
+<strong>(3)</strong>  Перед полем ввода видим расположение, в котором "мы находимся" (например, <code>C:\Users\User</code> или <code>~</code> - корневая директория)<br>
+<strong>(4)</strong> Необходимо решить, где мы будем обычно хранить и открывать тетрадки. Я рекомендую перейти в корень диска, создать там новую папку (заменив NAME на любое удовлетворяющее название) и перейти в неё:</p>
+<ul>
+<li>Windows 10: <code>cd /mnt/c &amp;&amp; mkdir NAME &amp;&amp; cd NAME</code></li>
+<li>Linux/Mac: <span style="color:red; font-size:2em;">TODO</span></li>
+<li>Anaconda Prompt: <code>cd C:\ &amp;&amp; md NAME &amp;&amp; cd NAME</code></li>
+</ul>
+<p><strong>(5)</strong> Вводим <code>jupyter notebook</code> и в браузере открывается вкладка localhost:8888/tree</p>
 
 </div>
 </div>
-</div></section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:3em;">PyCharm</span></p>
-<p>Обычно программируют не в ноутбуке, а в средах разработки для Python, одна из самых популярных - Pycharm. Её можно (и нужно!) скачать тут: <a href="https://www.jetbrains.com/pycharm/download/">https://www.jetbrains.com/pycharm/download/</a></p>
-<p>Прикрепить ссылку на туториал по работе с пайчарм + тесты + дебаг</p>
+<p><strong>Cоздать новую тетрадку:</strong> <code>New -&gt; Python3</code></p>
+<p><strong>Открыть готовую тетрадку:</strong> скачиваем/переносим тетрадку в ту папку, из которой запускаем Джупитер и открываем ее в меню</p>
+<p><strong>Создать ячейку какого-то типа:</strong> кнопка <code>+</code> и выпадающее меню справа для выбора типа ячейки, горячие клавиши <code>A, B, Y, M, R</code>  (см. <code>Help -&gt; Keyboard Shortcuts</code>)</p>
+<p><strong>Запуск/компиляция ячейки:</strong> <code>Shift + Enter</code></p>
 
 </div>
 </div>
-</div></section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:3em;">Yandex Contest</span></p>
-<p>Семинарские задачи будут сдаваться на платформе Яндекс.Контест. Ссылка на пробную задачу, показываем как сдавать.</p>
+<p><span style="color:green; font-size:1.5em;">PyCharm</span></p>
+<p>Обычно программируют не в ноутбуке, а в средах разработки для Python, одна из самых популярных - <em>Pycharm</em>. Её нужно скачать тут: <a href="https://www.jetbrains.com/pycharm/download/">https://www.jetbrains.com/pycharm/download/</a></p>
+<p>Подробнее как работать в Pycharm - читайте <a href="https://www.jetbrains.com/help/pycharm/quick-start-guide.html">туториал от разработчиков</a> и задавайте вопросы семинаристам.</p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:4em;">Введение в Python</span>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" width="300px" style="float:right"/></p>
+<p><span style="color:green; font-size:1.5em;">Yandex Contest</span></p>
+<p>Семинарские задачи будут сдаваться на платформе <strong>Яндекс.Контест</strong> - сервис для онлайн-проверки заданий по программированию. Сдайте свою первую задачу здесь: <span style="color:red; font-size:2em;">TODO</span></p>
 
 </div>
 </div>
-</div></section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:2em;"> Функция <code>print()</code></span></p>
-<p><span style="font-size:1.5em;">Для печати значений в Питоне есть функция <code>print()</code>. Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько выводов и вычислений:</span></p>
+<p><span style="color:green; font-size:2em;">Введение в Python</span>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" width="100px" style="float:right"/></p>
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;"> Функция <code>print()</code></span></p>
+<p>Для печати значений в Питоне есть функция <code>print()</code>. Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько выводов и вычислений:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hi!&#39;</span><span class="p">)</span>
@@ -12955,32 +12808,10 @@ $$О_{итог} = 6 + 0.2 * O_{мидтерм} + 0.2 * O_{экзамен}$$<br/>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hi!
-Второй hi!
-fisrt
-second
-🙂
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;А еще умею считать, вот, например, 2х2 =&#39;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> 
@@ -12991,26 +12822,7 @@ second
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>А еще умею считать, вот, например, 2х2 = 4
-2 в степени 10 равно 1024
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -13019,10 +12831,10 @@ second
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Aa&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;!&#39;</span><span class="p">)</span>
@@ -13034,27 +12846,10 @@ second
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Aa!Bb~Cc...</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39; + &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; = &#39;</span><span class="p">)</span>
@@ -13065,25 +12860,7 @@ second
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1 + 2 + 3 + 4 = 10
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -13092,14 +12869,14 @@ second
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">слева от меня таб (4 пробела) </span><span class="se">\n</span><span class="s1">а вот я уже на другой строке!&#39;</span><span class="p">)</span>  
-<span class="c1"># специальный символ \t заменяет таб (4 пробела), </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">слева от меня таб </span><span class="se">\n</span><span class="s1">а вот я уже на другой строке!&#39;</span><span class="p">)</span>  
+<span class="c1"># специальный символ \t заменяет таб, </span>
 <span class="c1"># \n означает перенос строки, сами они не выводятся</span>
 </pre></div>
 
@@ -13107,31 +12884,12 @@ second
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>	слева от меня таб (4 пробела) 
-а вот я уже на другой строке!
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:green; font-size:2em;">Арифметика</span></p>
+<p><span style="color:green; font-size:1.5em;">Арифметика</span></p>
 <table>
 <thead><tr>
 <th></th>
@@ -13171,14 +12929,721 @@ second
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Чему будет равно выражение?</span>
 <span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">5</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>В ячейке выше мы видим текст внутри кода, так называемый <strong>комментарий</strong>, для начала комментария есть специальны символ - решетка. Комментарий может стоять на отдельной строчке или после строчки кода.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;"> Функция </span></p>
+<p>Что же такое функция в Питоне?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Функция в программировании $-$ отдельный участок кода, который вызывают обратившись к нему <strong>по имени</strong>. При вызове происходит <strong>выполнение команд</strong> функции, которыми она определена. Главное отличие функции от других объектов Питона это <strong>круглые скобки</strong>, которые ставятся после названия функции.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Функции можно сравнить с небольшими подпрограммами, которые часто встраиваются в общую программу. Функции получает входные данные (<strong>аргументы функции</strong>) и возвращает выходные данные (<strong>вывод функции</strong>).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Функция может принимать произвольное количество аргументов или не принимать их вовсе. Часто у функции бывают <strong>именованные аргументы</strong>, например, <code>sep</code> и <code>end</code> у функции &lt;/code&gt;print()&lt;/code&gt;.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Функции бывают:</p>
+<ul>
+<li>встроенные в Питон, например <code>print(), input(), int(), float(), str(), type() </code>. С первой мы уже познакомились, с остальными познакомимся сейчас. </li>
+<li>дополнительные, которые необходимо "подгружать" в программу, можно определять новые функции самому $-$ но об этом всём мы поговорим подробнее позже, через пару уроков.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;"> Функция `input()` </span></p>
+<p>А что если хочется <strong>ввести какие-то данные</strong> не в самом коде, а уже при запуске кода <strong>пользователем</strong>?</p>
+<p>Есть функция <code>input()</code>, которая считывает одну строку (пока не нажмешь Enter).
+Вот программа, которая считывает имя пользователя и приветствует его:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;- Как тебя зовут?&#39;</span><span class="p">)</span> <span class="c1"># этот принт опицональный</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;- Привет,&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>На самом деле можно даже убрать первый <code>print()</code>. В документации Питона написано следующее: <a href="https://docs.python.org/3.7/library/functions.html#input">https://docs.python.org/3.7/library/functions.html#input</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Документация</strong> это такая книжка-руководство по всему, абсолютно всему, что существует в языке Питон.</p>
+<p>Мы советуем как можно чаще использовать Google, чтобы что-либо узнать по поводу того как функция работает или существует ли функция которая что-то тебе нужное делает.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">something</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Введите что-нибудь с клавиатуры: &#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;А я запомнил, вы ввели сейчас следующее: &#39;</span><span class="p">,</span> <span class="n">something</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Практически всегда программа (код) решает какую-то задачу на основе считанных данных и выводит ее результат. Попробуем разобраться с этим на простом примере.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;"> Задание переменной </span></p>
+<p>Оператор присвоения <code>=</code> "кладет" какое-то значение в переменную. От него слева ставится <strong>имя</strong> переменной, cправа <strong>значение</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">one</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">_hello_</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span>
+<span class="mi">1</span><span class="n">plus2</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Видим ошибку SyntaxError. Возникла она потому что нельзя начинать имя переменной с цифры и символов !"№;%:?*()@#$^&amp;[]{}|/&gt;&lt;,.=+ (кроме нижнего подчеркивания!)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># попробуем вывести переменную one</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">one</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Но как же так! Мы же ее выше обозначили... А все потому, что в той "ячейке" возникла ошибка, из-за нее не было выполнено ни одной операции. Попробуем заново, убрав ошибочную строчку кода.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;">Тип данных</span></p>
+<p>Так как данные бывают абсолютно разные (в основном числа, набор чисел, текст), то и в Питоне они представляются по-разному. Посмотрим поподробнее.</p>
+<p>Попробуем вычислить сумму двух чисел, введенных пользователем:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Странно получилось.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>На самом деле Питон «сложил» две строки, а не два числа.</p>
+<p><strong>Строка (string, <code>str</code>) - набор символов внутри кавычек.</strong></p>
+<p>Сложение строк происходит так - к первой строке в конце приписывается вторая:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;Строка 1&#39;</span> <span class="o">+</span> <span class="s1">&#39;Cтрока 2&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Строки можно умножать на число:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;abc&#39;</span> <span class="o">*</span> <span class="mi">10</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Друг на друга умножать нельзя, так же как и вычитать или делить (следующие строчки кода выдадут ошибки):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;abc&#39;</span> <span class="o">*</span> <span class="s1">&#39;def&#39;</span>
+
+<span class="s1">&#39;abc&#39;</span> <span class="o">-</span> <span class="s1">&#39;a&#39;</span>
+
+<span class="s1">&#39;abc&#39;</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="s1">&#39;abc&#39;</span> <span class="o">/</span> <span class="s1">&#39;a&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Обратим внимание, что в <strong>джупитер-ноутбуке</strong> необязательно всегда что-то печатать с помощью <code>print()</code>. В этой среде автоматически выводится значение переменной или просто содержимое <strong>последней строчки в ячейке</strong>. Например:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="mi">3</span> <span class="o">**</span> <span class="mi">2</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;Эту строку мы не увидим&#39;</span>
+<span class="s1">&#39;А эту увидим&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span> <span class="n">b</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;">В Питоне всё является объектом </span></p>
+<p>Число 9 представляется объектом «число 9»</p>
+<p>Слово 'Hello' – это объект «строка 'Hello'»</p>
+<p>В ячейке выше видно, что содержимое переменных <code>a</code> и <code>b</code> заключено в кавычки, это значит что они типа «строка».</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;"> Функция `type()`</span></p>
+<p>Строки хранятся в объектах типа <code>str</code> (string), целые числа в объектах типа <code>int</code> (integer), числа с запятой (вернее точкой), т.е. вещественные, в объектах типа <code>float</code> (floating point).</p>
+<p>Функция <code>type()</code> принимает на вход объект и выдает её тип:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="mf">1.25</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;">Преобразование типов</span></p>
+<p>С разными типами объектов можно проделывать разные операции! Нельзя перемножить строки, но можно числа. Однако можно преобразовывать типы объектов. Чтобы превратить что-то в «строку», воспользуемся <em>функцией</em> <code>str()</code>, чтобы строку, обозначающую число, превратить в «число», то <code>int()</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;356&#39;</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;356&#39;</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;9&#39;</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">/</span> <span class="mi">2</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Функция <code>input()</code> всегда считывает с клавиатуры именно строки! Исправим нашу программу, где мы не смогли сложить <code>a + b</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># мы исправили код разными способами</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="c1"># сразу преобразовали строку в число</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="n">inta</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1"># создали новые переменные с числовыми значениями</span>
+<span class="n">intb</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">inta</span> <span class="o">+</span> <span class="n">intb</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">))</span> <span class="c1"># преобразовали строки в числа &quot;на месте&quot;, </span>
+                       <span class="c1"># но сами переменные останутся строками!</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;"> Подробнее про типы данных </span></p>
+<p>Строки обычно заключаются в одинарные кавычки (в последнее время), но их так же можно заключать в двойные кавычки. Так же если кавычки это часть строки, то надо использовать разные виды кавычек.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;it is &quot;string&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;it is &#39;string&#39;&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;it&#39;s a code&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Строки так же могут быть многострочными, в таком случае нужны тройные кавычки (подходят как одинарные, так и двойные)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;первая строка</span>
+<span class="s1">вторая строка</span>
+<span class="s1">третья строка</span>
+<span class="s1">    со сдвигом&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Если применить <code>int()</code> к вещественному числу, то просто отбросится дробная часть:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159265359</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
+<span class="nb">int</span><span class="p">(</span><span class="mf">3.7</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Есть обычное математическое округление, функция <code>round()</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">3.12</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="mf">3.5</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="mf">3.9</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Целочисленное деление возвращает тот тип, который был у делимого:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mi">5</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">pi</span> <span class="o">//</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Деление всегда возвращает <code>float</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">num</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Следующие числа будут типа <code>float</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="p">,</span> <span class="mf">1.</span> <span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.25</span><span class="p">,</span> <span class="mf">1e5</span><span class="p">,</span> <span class="mf">1e-2</span><span class="p">,</span> <span class="mf">2e2</span><span class="p">,</span> <span class="mf">2.99E-3</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-1e4&#39;</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Как работает <code>e-float</code> число?</p>
+<p>Такое вещественное число состоит из двух частей $-$ то, что стоит слева от буквы, и то, что стоит справа. Представим это так: <code>leftEright</code>. Тогда число будет равно <code>left * 10 ** right</code>. Левая часть (мантисса) может быть <code>int</code> и <code>float</code>, правая (порядок) только <code>int</code> (оба как положительные, так и отрицательные). Пробелы между ними не ставятся.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Надо быть внимательным при преобразовании типов:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;1p&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Из-за представления чисел в компьютере вещественные числа неточны, и это может привести к ошибкам (для высокой точности используют другие объекты, например, Decimal и Fraction):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># равно 1.0</span>
+<span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.1</span>
 </pre></div>
 
 </div>
@@ -13191,13 +13656,13 @@ second
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[30]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>-19</pre>
+<pre>0.9999999999999999</pre>
 </div>
 
 </div>
@@ -13205,83 +13670,168 @@ second
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">decimal</span> <span class="k">import</span> <span class="n">Decimal</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Decimal</span><span class="p">(</span><span class="mf">0.1</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.1000000000000000055511151231257827021181583404541015625
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mf">0.1</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;0.1&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.1
+1.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>В ячейке выше мы видим текст внутри кода, так называемый <strong>комментарий</strong>, для начала комментария есть специальны символ - решетка. Комментарий может стоять на отдельной строчке или после строчки кода.</p>
+<p>Также вещественные числа не поддерживают длинную арифметику (целая часть числа настолько длинная, что хранить то, что после запятой, не получается):</p>
 
 </div>
 </div>
-</div></div></section>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">**</span> <span class="mi">1000</span>
+<span class="n">a</span> <span class="o">+</span> <span class="mf">0.0001</span>
+</pre></div>
+
 </div>
 </div>
+</div>
 
-<script>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Для проведения вычислений с действительными числами язык Питон содержит много дополнительных функций, собранных в библиотеку (модуль), которая называется <code>math</code> (больше тут <a href="https://docs.python.org/3.7/library/math.html">https://docs.python.org/3.7/library/math.html</a>).</p>
 
-require(
-    {
-      // it makes sense to wait a little bit when you are loading
-      // reveal from a cdn in a slow connection environment
-      waitSeconds: 15
-    },
-    [
-      "reveal.js/lib/js/head.min.js",
-      "reveal.js/js/reveal.js"
-    ],
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
-    function(head, Reveal){
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sin(3) =&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Округление вверх&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">3.14</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Округление вниз &#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">3.999</span><span class="p">))</span>
+</pre></div>
 
-        // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
+</div>
+</div>
+</div>
 
-            transition: "slide",
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span style="color:green; font-size:1.5em;">На этом на сегодня все! Спасибо за внимание! </span></p>
+<p>По абсолютно любым вопросам не стесняйтесь писать семинаристам или спрашивать их на семинарах!</p>
 
-            // Optional libraries used to extend on reveal.js
-            dependencies: [
-                { src: "reveal.js/lib/js/classList.js",
-                  condition: function() { return !document.body.classList; } },
-                { src: "reveal.js/plugin/notes/notes.js",
-                  async: true,
-                  condition: function() { return !!document.body.classList; } }
-            ]
-        });
-
-        var update = function(event){
-          if(MathJax.Hub.getAllJax(Reveal.getCurrentSlide())){
-            MathJax.Hub.Rerender(Reveal.getCurrentSlide());
-          }
-        };
-
-        Reveal.addEventListener('slidechanged', update);
-
-        function setScrollingSlide() {
-            var scroll = false
-            if (scroll === true) {
-              var h = $('.reveal').height() * 0.95;
-              $('section.present').find('section')
-                .filter(function() {
-                  return $(this).height() > h;
-                })
-                .css('height', 'calc(95vh)')
-                .css('overflow-y', 'scroll')
-                .css('margin-top', '20px');
-            }
-        }
-
-        // check and set the scrolling slide every time the slide change
-        Reveal.addEventListener('slidechanged', setScrollingSlide);
-
-    }
-
-);
-</script>
-
+</div>
+</div>
+</div>
+    </div>
+  </div>
 </body>
+
+ 
 
 
 </html>
