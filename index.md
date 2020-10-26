@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Python Course HSE
 
-You can use the [editor on GitHub](https://github.com/svdcvt/math_python_hse_2020/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# 2020
+Программа курса:
+1. [Вводные курса, разбор платформ. Установка ПО. Введение в Python.](https://github.com/svdcvt/math_python_hse_2020/lectures/lectur01_intro.ipunb)
+2. Условные конструкции. While.
+3. Контейнеры: кортеж, список.
+4. For. Range, enumerate, zip, map. Break, continue. Генераторы.
+5. Функции, рекурсии.
+6. Pygame. Выдача ДЗ 1, разбор условия.
+7. Строки. Форматирование. Регулярные выражения.
+8. Словари, множества. 
+9. Алгоритмическая сложность (сравнение структур данных в питоне - списки словари множества).
+10. Advanced темы Исключения, тестирование, логирование. Модульное оформление. Аргпарс. Файлы. 
+11. Классы. Выдача ДЗ 2, разбор условия.
+12. Advanced темы 2: итераторы, Itertools, collection, functools. (ЧТО ЕЩЕ?)
+13. Numpy. Scipy. 
+14. Pandas. Выдача ДЗ 3.
+15. Matplotlib.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/svdcvt/math_python_hse_2020/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/).
