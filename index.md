@@ -2,7 +2,7 @@
 
 # 2020
 Программа курса:
-1. [Вводные курса, разбор платформ. Установка ПО. Введение в Python.](https://github.com/svdcvt/math_python_hse_2020/lectures/lectur01_intro.ipunb)
+1. [Вводные курса, разбор платформ. Установка ПО. Введение в Python.](https://github.com/svdcvt/math_python_hse_2020/blob/master/lectures/lecture01_intro_slides.ipynb)
 2. Условные конструкции. While.
 3. Контейнеры: кортеж, список.
 4. For. Range, enumerate, zip, map. Break, continue. Генераторы.
