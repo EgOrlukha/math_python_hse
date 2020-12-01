@@ -144,3 +144,64 @@
     - MacOS/Linux
         - Установка `pytest`: выполните в терминале `pip install -U pytest`
         - Из папки, где у вас лежат `polynomial.py` и `test_polynomial.py` выполните в терминале `pytest`
+
+## [1 балл] [CLI](https://ru.wikipedia.org/wiki/Интерфейс_командной_строки)
+
+С помощью `argparse` добавьте интерфейс командной строки для запуска различных операций с многочленами. В задании необходимо реализовать следующие команды:
+
+1. Умножение двух многочленов
+    - `lhs` - коэффициенты первого многочлена, `rhs` - второго
+    
+    Пример запуска скрипта из командной строки:
+    ```python
+    $ python3 main.py multiply --lhs 1 2 3 -- rhs 4 1
+    ```
+
+2. Нахождение производной
+    - `degree` - степень производной
+
+    ```python
+    $ python3 main.py derrivative 1 5 3 4 2 --degree 3
+    ```
+
+3. Решение квадратного уравнения
+
+    ```python
+    $ python3 main.py solve-quadratic 4 2 4
+    ```
+
+4. Поиск корня многочлена нечетной степени
+    - `eps` - точность, с которой необходимо найти корень
+
+    ```python
+    $ python3 main.py find-root 1 5 3 2 5 7 --eps 1e-7
+    ```
+
+Для каждой команды необходимо краткое описание с помощью аргумента `help`.
+
+Логику связанную с применением `argparse` предлагается вынести в отдельный файл `main.py`. Также, можете реализовать ее внутри polynomial.py, только в таком случае необходимо выполнять парсинг аргументов внутри условия `if __name__ == "__main__"`:
+
+- [What does `if __name__ == "__main__"` do?](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+
+## [1 балл] Github
+
+В данной части необходимо разобраться с [github](https://github.com/) и разместить свое решение на этой платформе. Также, оформите небольшой `README`, в котором будет краткое описание проделанной работы.
+
+- [Hello world](https://guides.github.com/activities/hello-world/) (не обязательно создавать ветку и делать `pull request`, достаточно просто сделать `push` в `master`)
+- [Github Tutorial For Beginners - Github Basics for Mac or Windows & Source Control Basics](https://www.youtube.com/watch?v=0fKg7e37bQE)
+- [How to Write Beautiful and Meaningful README](https://blog.bitsrc.io/how-to-write-beautiful-and-meaningful-readme-md-for-your-next-project-897045e3f991)
+- [Basic writing and formatting syntax](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax)
+- [Markdown Cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## [1 балл] GCD
+
+Добавьте следующую функциональность в класс многочленов:
+
+- Перегруженный оператор `%`, в том числе и для взятия остатка при делении на числа.
+- Перегруженный оператор `/`, в том числе и для деления на числа, который возвращает пару `(q, r)` - частное и остаток.
+- Метод `gcd` позволяющий вычислить НОД двух многочленов.
+
+### [1 балл] Testing
+
+- Добавьте тесты на методы из предыдущего задания с помощью фрэймворка `pytest`.
+- С помощью утилиты [coverage](https://coverage.readthedocs.io/en/coverage-5.3/) добейтесь 100% покрытия для реализованных в этом задании методов.
