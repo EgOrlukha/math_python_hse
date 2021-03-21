@@ -1,6 +1,4 @@
-## Python Course HSE
-
-# 2020
+# Содержание курса
 1. [Вводные курса, разбор платформ. Установка ПО. Введение в Python.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture01_intro.ipynb) | [[Задачи]](https://contest.yandex.ru/contest/19635/enter/)
 2. [Условные конструкции. While.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture02_if.ipynb) | [[Задачи]](https://contest.yandex.ru/contest/19781/enter/)
 3. [Контейнеры: кортеж, список.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture03_container.ipynb) | [[Задачи]](https://contest.yandex.ru/contest/19913/enter/)
