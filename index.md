@@ -12,6 +12,6 @@
 9. [Advanced темы Исключения, тестирование, логирование. Модульное оформление. Аргпарс. Файлы.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture09_adv1/lecture09_adv1.ipynb)
 10. [Классы.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture10_class.ipynb) ▶️ [[Задачи]](https://contest.yandex.ru/contest/23108)
 11. [Подборка материалов по темам: итераторы, Itertools, collection, functools, регулярные выражения.](https://www.notion.so/11-08124f6d7db343f2a7a0b043b512be10)
-12. [Задачи по изучению библиотек: Numpy. Pandas. Matplotlib.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/homework-3/homework-3.ipynb)
+12. [Задачи по изучению библиотек: Numpy. Pandas. Matplotlib.](https://colab.research.google.com/github/svdcvt/math_python_hse_2020/blob/master/homework-3/homework-3.ipynb)
 
 
