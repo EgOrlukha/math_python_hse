@@ -1,7 +1,7 @@
 # Python Course
 
 ## Содержание курса
-1. [Вводные курса, разбор платформ. Установка ПО. Введение в Python.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture01_intro.ipynb) ▶️ [[Задачи]](https://contest.yandex.ru/contest/19635/enter/)
+1. [Введение в Python.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture01_intro.ipynb#Введение-в-Python) ▶️ [[Задачи]](https://contest.yandex.ru/contest/19635/enter/)
 2. [Условные конструкции. While.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture02_if.ipynb) ▶️ [[Задачи]](https://contest.yandex.ru/contest/19781/enter/)
 3. [Контейнеры: кортеж, список.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture03_container.ipynb) ▶️ [[Задачи]](https://contest.yandex.ru/contest/19913/enter/)
 4. [For. Range, enumerate, zip, map. Break, continue. Генераторы.](https://nbviewer.jupyter.org/github/svdcvt/math_python_hse_2020/blob/master/lectures/lecture04_for.ipynb) ▶️ [[Задачи]](https://contest.yandex.ru/contest/20226/enter/)
