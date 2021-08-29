@@ -12,12 +12,12 @@
 9. Hash-2: множества; анализ алгоритмической сложности структур данных.
 10. ООП: классы.
 ### Блок "Python как инструмент для анализа данных"
-11. Анализ 1:	basic pandas.
-12. Анализ 2: advanced pandas; Визуализации 1: seaborn.
-13. Мат. вычисления 1: basic numpy. Визуализации 2: matplotlib, plotly, networkx.
+10. Анализ 1:	basic pandas.
+11. Анализ 2: advanced pandas; Визуализации 1: seaborn.
+12. Мат. вычисления 1: basic numpy. Визуализации 2: matplotlib, plotly, networkx.
 ###	Блок "Python как инструмент для мат. вычислений"
-14. Мат. вычисления 2: numpy, scipy, itertools/collections.
-15. Мат. вычисления 3: advanced numpy, scipy. 
+13. Мат. вычисления 2: numpy, scipy, itertools/collections.
+14. Мат. вычисления 3: advanced numpy, scipy. 
 
 ---
 
