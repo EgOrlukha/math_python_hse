@@ -1,5 +1,7 @@
 # Python Course
-<img source="https://prateekvjoshi.files.wordpress.com/2015/10/1-main2.png" width=100>
+
+<img source="https://prateekvjoshi.files.wordpress.com/2015/10/1-main2.png" width="100"/>
+
 ## Содержание курса 2021
 ### Блок "Базовый Python"
 1. Введение в Python: ввод-вывод, арифметика, типы данных. [[Конспект]]() [[Мини-контест]]()
