@@ -1,10 +1,10 @@
 # Python Course
 
-[svdcvt.github.io/math_python_hse/](svdcvt.github.io/math_python_hse/)
+[svdcvt.github.io/math_python_hse/](https://svdcvt.github.io/math_python_hse/)
 
 ## Содержание курса 2021
 ### Блок "Базовый Python"
-1. Введение в Python: ввод-вывод, арифметика, типы данных.
+1. [Введение в Python: ввод-вывод, арифметика, типы данных.](/lectures/lecture01.ipynb) 
 2. Условные конструкции.
 3. Циклы: while и for.
 4. Последовательности: кортеж, список, строка; join/split, генераторы.
