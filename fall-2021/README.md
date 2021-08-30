@@ -1,6 +1,6 @@
 # Python Course
 
-svdcvt.github.io/math_python_hse/
+[svdcvt.github.io/math_python_hse/](svdcvt.github.io/math_python_hse/)
 
 ## Содержание курса 2021
 ### Блок "Базовый Python"
