@@ -1,7 +1,7 @@
 ## Содержание курса 2021
 ### Блок "Базовый Python"
 1. Введение в Python: ввод-вывод, арифметика, типы данных. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture01_intro.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/28661) [[Контест]](https://contest.yandex.ru/contest/19635)
-2. Условные конструкции.
+2. Условные конструкции. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture02_if.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/28677) [[Контест]](https://contest.yandex.ru/contest/28949)
 3. Циклы: while и for.
 4. Последовательности: кортеж, список, строка; join/split, генераторы.
 6. Функции: map, enumerate, zip, sorted(key); создание собственных функций; рекурсия.
