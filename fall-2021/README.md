@@ -6,7 +6,7 @@
 ### Блок "Базовый Python"
 1. [Введение в Python: ввод-вывод, арифметика, типы данных.](/lectures/lecture01_intro.ipynb) 
 2. [Условные конструкции.](/lectures/lecture02_if.ipynb)
-3. Циклы: while и for.
+3. [Циклы: while и for.](/lectures/lecture03_loop.ipynb)
 4. Последовательности: кортеж, список, строка; join/split, генераторы.
 6. Функции: map, enumerate, zip, sorted(key); создание собственных функций; рекурсия.
 7. Строки: функции строк, форматирование, чтение файлов.
