@@ -3,7 +3,7 @@
 1. Введение в Python: ввод-вывод, арифметика, типы данных. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture01_intro.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/28661) [[Контест]](https://contest.yandex.ru/contest/19635)
 2. Условные конструкции. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture02_if.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/28677) [[Контест]](https://contest.yandex.ru/contest/28949)
 3. Циклы: while и for. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture03_loop.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/28830) [[Контест]](https://contest.yandex.ru/contest/29398)
-4. Последовательности: кортеж, список, строка; join/split, генераторы.
+4. Последовательности: кортеж, список, строка; join/split, генераторы. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture04_list.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/28954) [[Контест TBA]]()
 6. Функции: map, enumerate, zip, sorted(key); создание собственных функций; рекурсия.
 7. Строки: функции строк, форматирование, чтение файлов.
 8. Hash-1: что такое хэш таблица; словари.
