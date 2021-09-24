@@ -126,23 +126,23 @@ def get_next_generation(generation):
     return next_generation
 ```
 
-    **Примеры:**
+**Примеры:**
 
-    ```python
-    generation = [
-        [0, 1, 0],
-        [0, 1, 0],
-        [0, 1, 0],
-    ]
+```python
+generation = [
+    [0, 1, 0],
+    [0, 1, 0],
+    [0, 1, 0],
+]
 
-    next_generation = get_next_generation(generation)
-    print(next_generation)
-    
-    >>>
-     [[0, 0, 0],
-     [1, 1, 1],
-     [0, 0, 0],]
-    ```
+next_generation = get_next_generation(generation)
+print(next_generation)
+
+>>>
+ [[0, 0, 0],
+ [1, 1, 1],
+ [0, 0, 0],]
+```
 
 ## Визуалка: интерактивная визуализация с помощью PyGame
 
