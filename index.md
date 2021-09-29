@@ -1,4 +1,7 @@
 ## Содержание курса 2021
+
+[Про PEP8](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/about_pep8.md)
+
 ### Блок "Базовый Python"
 1. Введение в Python: ввод-вывод, арифметика, типы данных. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture01_intro.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/28661) [[Контест]](https://contest.yandex.ru/contest/19635)
 2. Условные конструкции. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture02_if.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/28677) [[Контест]](https://contest.yandex.ru/contest/28949)
