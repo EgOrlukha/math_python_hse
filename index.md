@@ -10,7 +10,7 @@
 5. Функции: map, enumerate, zip, sorted(key); создание собственных функций; рекурсия.<br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture05_func.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/29221) [[Контест]](https://contest.yandex.ru/contest/29844)
 6. Строки: функции строк, форматирование, чтение файлов.<br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture06_str.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/28872) [[Контест]](https://contest.yandex.ru/contest/29883/problems/)
 7. Hash-1: множества; анализ алгоритмической сложности структур данных. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture07_set.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/30000) [[Контест]](https://contest.yandex.ru/contest/30002)
-8. Hash-2: что такое хэш таблица; словари. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture08_dict.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/30003) [[Контест]]
+8. Hash-2: что такое хэш таблица; словари. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture08_dict.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/30003) [[Контест]](https://contest.yandex.ru/contest/30004)
 9. ООП: классы. Исключения. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture09_class.ipynb) [[Мини-контест]] [[Контест]]
 ### Блок "Python как инструмент для анализа данных"
 10. Анализ 1:	pandas.
