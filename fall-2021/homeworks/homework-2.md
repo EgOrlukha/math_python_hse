@@ -166,8 +166,8 @@
 
 - `polynomial.py`
 
-    ```python
-    # polynomial.py
+```python
+# polynomial.py
 
 class Polynomial:
 
@@ -228,7 +228,7 @@ class QuadraticPolynomial(Polynomial):
 
     def solve(self):
         pass
-    ```
+```
 
 - `test_polynomial.py`
 
