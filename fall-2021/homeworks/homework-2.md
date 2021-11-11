@@ -2,7 +2,7 @@
 
 Реализация класса многочленов [сдается в контест](https://contest.yandex.ru/contest/29819/enter).
 
-Код для code-review [сдается в Replit](https://replit.com/@HSE-Math-Python/Polynom). Не забудьте нажать кнопку Submit, когда будете готовы сдать задание.
+Код для code-review [сдается в Replit](https://replit.com/@HSE-Math-Python/HW2-Polynomial-Class). Не забудьте нажать кнопку Submit, когда будете готовы сдать задание.
 
 ## Класс многочленов
 
