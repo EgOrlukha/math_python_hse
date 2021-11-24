@@ -14,7 +14,7 @@
 9. ООП: классы. Исключения. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture09_class.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/31224) [[Контест]](https://contest.yandex.ru/contest/31316/)
 ### Блок "Python как инструмент для анализа данных"
 10. Анализ:	pandas. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture10_pandas.ipynb) [[Мини-контест]](https://contest.yandex.ru/contest/31778)
-11. Визуализации: seaborn, matplotlib, plotly.
+11. Визуализации: seaborn, matplotlib, plotly. <br> [[Конспект]](https://github.com/svdcvt/math_python_hse/blob/master/fall-2021/lectures/lecture11_visual.ipynb)
 ###	Блок "Python как инструмент для мат. вычислений"
 12. Мат. вычисления 2: numpy, scipy, itertools/collections.
 13. Мат. вычисления 3: advanced numpy, scipy. 
